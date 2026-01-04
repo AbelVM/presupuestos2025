@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Entidades Locales 2025</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Una visualización de datos que permite consultar y comparar en detalle las partidas presupuestarias municipales de 2025 por habitante.">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Abel Vázquez Montoro">
+    <meta name="apple-mobile-web-app-title" content="Entidades Locales 2025">
+    <meta name="application-name" content="Entidades Locales 2025">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Entidades Locales 2025">
+    <meta property="og:site_name" content="Entidades Locales 2025">
+    <meta property="og:url" content="https://abelvm.github.io/presupuestos2025/">
+    <meta property="og:description"
+        content="Una visualización de datos que permite consultar y comparar en detalle las partidas presupuestarias municipales de 2025 por habitante.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://abelvm.github.io/presupuestos2025/og-image-1200-675.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@abel_vm">
+    <meta name="twitter:title" content="Entidades Locales 2025">
+    <meta name="twitter:description"
+        content="Una visualización de datos que permite consultar y comparar en detalle las partidas presupuestarias municipales de 2025 por habitante.">
+    <meta name="twitter:image" content="https://abelvm.github.io/presupuestos2025/og-image-1200-675.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#fe019a">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <script nomodule="" src="./airship/airship/airship.js"></script>
+
+
+    <style>
+        .panel-text {
+            margin-right: 8px;
+            padding: 8px;
+            background-color: #FFF;
+        }
+    </style>
+  <script type="module" crossorigin src="./assets/index-C9QjIvMg.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DAmIbImg.css">
+</head>
+
+<body class="as-app-body as-app">
+
+    <header class="as-toolbar">
+        <div class="as-toolbar__item">
+            <div class="as-title">
+                ¿Cuánto ha presupuestado tu Ayuntamiento&nbsp;<span class="as-hot">para
+                    ti</span>&nbsp;en 2025?
+            </div>
+        </div>
+        <button class="as-btn as-btn--primary">
+            <i class="fa-solid fa-share-nodes"></i>
+            <p>Compartir</p>
+        </button>
+    </header>
+    <!-- <nav class="as-tabs"></nav> -->
+
+    <!--     <div class="as-content"> -->
+    <as-responsive-content>
+        <aside class="as-sidebar as-sidebar--l as-sidebar--left" data-name="Detalles" data-tab-order="1">
+            <div class="as-container">
+                <div class="as-box">
+                    <h3 class="as-subheader">Elige la partida presupuestaria del mapa</h1>
+                        <as-dropdown class="as-pt--16"></as-dropdown>
+                        <as-legend-color-continuous-polygon id="legend" class="as-pt--16"
+                            orientation="horizontal"></as-legend-color-continuous-polygon>
+                        <p class="as-caption as-pt--16">
+                            Los valores intermedios de la escala representan los percentiles 25, 50 y 75 de la
+                            distribución. De modo que, por ejemplo, el valor central indica que el 50% de los
+                            Ayuntamientos ha gastado igual o menos que esa cifra en la partida seleccionada. Los colores
+                            más claros representan los valores más extremos.
+                        </p>
+                </div>
+            </div>
+            <div class="as-container as-container--scrollable">
+                <div class="as-box">
+                    <h3 class="as-subheader as-font--medium">¿Qué es esto?</h3>
+                    <p class="as-body">Esta visualización de datos interactiva busca poder consultar y comparar en
+                        detalle las partidas presupuestarias de 2025 <b>por habitante</b>
+                        y su desglose para las entidades locales de España, es decir los Ayuntamientos. Son datos de
+                        presupuestos, las liquidaciones de la ejecución de los mismos se publicarán a finales de
+                        2026.
+                    </p>
+                    <p class="as-body">Algunas partidas pueden parecer muy bajas, pero no todos los servicios los
+                        gestionan los Ayuntamientos. Por ejemplo, Sanidad y Educación suelen ser competencias
+                        autonómicas.
+                    </p>
+                    <p class="as-body">Pero puedes comparar lo que pagas de IBI + Tasa de Basuras con lo que te
+                        "devuelve" tu Ayuntamiento en total. O la Tasa de basuras con la suma de los epígrafes
+                        <b>Recogida, gestión y tratamiento de residuos</b> y <b>Limpieza viaria</b> (puedes
+                        encontrar
+                        estos datos dentro de la partida <b>SERVICIOS PÚBLICOS BÁSICOS</b> ⇒ <b>Bienestar
+                            comunitario</b>).
+                    </p>
+                    <h3 class="as-subheader as-font--medium">¿Faltan unos cuantos Ayuntamientos, no?</h3>
+                    <p class="as-body">Correcto. Todos aquellos que no han reportado en fecha sus presupuestos
+                        municipales al Ministerio de Hacienda.
+                    </p>
+                    <h3 class="as-subheader as-font--medium">¿Cómo lo uso?</h3>
+                    <p class="as-body">El panel de la derecha muestra de manera dinámica los valores medios de todas
+                        las partidas para los municipios visibles en el mapa en cada momento, y puedes hacer click en
+                        cualquiera de ellas para ver el desglose en detalle. Aporta contexto, mostrando cómo cambia el
+                        reparto de las partidas según la zona que tengamos en pantalla.
+                    </p>
+                    <p class="as-body">En la parte superior de este panel puedes elegir qué epígrafe presupuestario
+                        quieres usar para colorear los municipios en el mapa, y se actualiza la leyenda acorde al
+                        epígrafe seleccionado. Esto nos permite entender de manera visual cómo se
+                        comparan distintos Ayuntamientos en relación al presupuesto del epígrafe seleccionado.
+                    </p>
+                    <p class="as-body">Para facilitar el uso, se ha añadido un buscador de municipios. Una vez
+                        localizado en el mapa el municipio de nuestro interés, podemos hacer click sobre él en el mapa
+                        para ver su presupuesto desglosado en forma de árbol interactivo.
+                    </p>
+                    <h3 class="as-subheader as-font--medium">¿Por qué?</h3>
+                    <p class="as-body">Inspirado por <a
+                            href="https://elpais.com/sociedad/2025-12-30/la-brecha-del-gasto-municipal-en-servicios-sociales-de-los-434-euros-por-habitante-de-isla-cristina-a-los-36-de-galapagar.html"
+                            target="_blank">este artículo</a>
+                        que hacía referencia a <a
+                            href="https://directoressociales.com/wp-content/uploads/2025/12/Nota-Prensa-Excelencia-Social-2024_v-1.0.1.pdf"
+                            target="_blank">este estudio</a> de la
+                        <a href="https://directoressociales.com/" target="_blank">Asociación Estatal de Directoras y
+                            Gerentes de Servicios Sociales de España</a> sobre la desigualdad en el gasto social por
+                        habitante de los Ayuntamientos de España, quería expandir el análisis a todas las partidas
+                        presupuestarias, en detalle.
+                    </p>
+                    <h3 class="as-subheader as-font--medium">¿Cómo?</h3>
+                    <p class="as-body">Se han empleado cero unidades de vibe-coding. Ninguna IA, chatbot, agente o
+                        asistente ha gastado un token en este proyecto. Lo divertido era <b>hacerlo</b> no <b>ver cómo
+                            lo hacen</b>.
+                    </p>
+                    <p class="as-body">He usado <a href="https://maplibre.org/" target="_blank">MapLibre GL JS</a> y
+                        <a href="https://carto.com/developers/airship/" target="_blank">Airship</a>
+                        (deprecadísimo, pero que me sigue gustando), y todo compilado con <a href="https://vite.dev/"
+                            target="_blank">Vite</a>.
+                    </p>
+                    <p class="as-body">La escala de colores <i class="fa-solid fa-circle as-color--primary"></i>(teal) -
+                        <i class="fa-solid fa-circle as-color--complementary"></i>(neon pink), que ya usé en <a
+                            href="https://madb.netlify.app/" target="_blank">MAdB</a>, se ha construido usando <a
+                            href="https://abelvm.github.io/colortool/" target="_blank">Color scales
+                            builder</a>. Es una escala divergente interpolada en el espacio de color <a
+                            href="https://en.wikipedia.org/wiki/CIELAB_color_space" target="_blank">CIE L*a*b*</a> para
+                        garantizar la corrección perceptual.
+                    </p>
+                    <p class="as-body">Los datos están almacenados en formato <a
+                            href="https://docs.protomaps.com/pmtiles/" target="_blank">PMTiles</a>
+                        tras procesarlos en <a href="https://www.postgresql.org/" target="_blank">Posgtgres</a> con
+                        <a href="https://postgis.net/" target="_blank">PostGIS</a>
+                        y convertilos con <a href="https://github.com/felt/tippecanoe" target="_blank">Tippecanoe</a>.
+                        Los puedes descargar de <a href="./assets/entidades_locales_2025.pmtiles">aquí</a>.
+                    </p>
+                    <h3 class="as-subheader as-font--medium">¿Con qué?</h3>
+                    <p class="as-body">Con los datos de presupuestos municipales de 2025 publicados en <a
+                            href="https://serviciostelematicosext.hacienda.gob.es/SGFAL/CONPREL" target="_blank">
+                            Presupuestos y Liquidaciones de las Entidades Locales (Ministerio de hacienda)</a> el 30 de
+                        Diciembre de 2025.
+                    </p>
+                    <p class="as-body">
+                        El mapa base utiliza el estilo <b>DarkMatter</b> de <a href="https://carto.com/"
+                            target="_blank">CARTO</a> con datos de <a href="https://www.openstreetmap.org"
+                            target="_blank">OpenStreetMap</a>. El buscador utiliza el servicio <a
+                            href="https://nominatim.openstreetmap.org/" target="_blank">Nominatim de OpenStreetMap</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="as-container" style="min-height: 60px;">
+                <div class="as-box">
+                </div>
+            </div>
+        </aside>
+
+        <main class="as-main">
+            <div class="as-map-area" data-name="remove" data-tab-order="3">
+                <div id="map"></div>
+            </div>
+            <footer class="as-map-footer" data-name="Mapa" data-tab-order="0" style="min-height: 60px; height: 60px;">
+                <div class="as-box as-color--type-04">
+                    <div class="as-body as-color--type-02" style="text-align: center;">Made with <span
+                            class="as-hot as-subheader">♥
+                        </span> by <a href="https://www.linkedin.com/in/abelvazquez/" target="_blank">Abel Vázquez
+                            Montoro</a></div>
+                </div>
+            </footer>
+        </main>
+
+        <aside class="as-sidebar as-sidebar--xl as-sidebar--right" data-name="Datos dinámicos" data-tab-order="2">
+            <div class="as-container as-container--scrollable">
+                <div class="as-box as-title">
+                    <as-category-widget class="partidas as-p--16" heading=""
+                        description="Haz click para ver el desglose de cada partida">
+                    </as-category-widget>
+                </div>
+            </div>
+            <div class="as-container" style="min-height: 60px;">
+                <div class="as-box">
+                </div>
+            </div>
+        </aside>
+    </as-responsive-content>
+    <!--     </div> -->
+
+    <dialog class="modal">
+
+    </dialog>
+</body>
+
+</html>
